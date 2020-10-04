@@ -9,7 +9,8 @@ def all_palindromes(alphabet, n):
         b = word[::-1]
         if word[0:k] == b[0:k]:
             ans.append(''.join(word))
-    return '\n'.join(ans)
+    return '\n'.join(set(ans))
 
 
 print(all_palindromes('abcd', 4))
+
